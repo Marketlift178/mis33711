@@ -1,8 +1,8 @@
 /*
 Program name: style.css
-Author: Your Name
-Date created: June 8, 2026
-Date last edited: June 8, 2026
+Author: Syed Osman
+Date created: June 10, 2026
+Date last edited: June 10, 2026
 Version: 1.0
 Description: External stylesheet for MIS 3371 Homework 1 patient registration form.
 */
@@ -17,43 +17,67 @@ body {
 }
 
 /* Tag selector */
-h1, h2 {
+h1 {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 5px;
+}
+
+/* Tag selector */
+h2 {
     color: #0b4f6c;
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 /* ID selector */
 #banner {
     background-color: #0b4f6c;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 25px;
+    border-bottom: 5px solid #08384d;
+}
+
+/* ID selector */
+#banner img {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 /* Class selector */
 .form-section {
     background-color: white;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
+    width: 90%;
+    margin: 25px auto;
+    padding: 25px;
     border: 1px solid #cccccc;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-/* Table styling */
+/* Tag selector */
 table {
     width: 100%;
     border-spacing: 10px;
 }
 
+/* Tag selector */
 td {
     padding: 6px;
+    vertical-align: top;
 }
 
-/* Form inputs */
+/* Tag selector */
+label {
+    font-weight: bold;
+}
+
+/* Tag selector */
 input, select, textarea {
-    padding: 6px;
+    padding: 7px;
     font-size: 14px;
+    border: 1px solid #888888;
+    border-radius: 4px;
 }
 
 /* Name selector */
@@ -61,39 +85,57 @@ input[name="firstName"] {
     border: 2px solid #0b4f6c;
 }
 
-/* Links */
+/* Name selector */
+input[name="lastName"] {
+    border: 2px solid #0b4f6c;
+}
+
+/* Class selector */
+.button-row {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Attribute selector */
+input[type="submit"], input[type="reset"] {
+    background-color: #0b4f6c;
+    color: white;
+    padding: 10px 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Attribute selector with hover */
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #08384d;
+}
+
+/* Link styling */
 a {
-    color: #0b4f6c;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Visited hyperlink styling */
 a:visited {
-    color: #663399;
+    color: #d9f2ff;
 }
 
+/* Hover hyperlink styling */
 a:hover {
     text-decoration: underline;
 }
 
-/* Buttons */
-button, input[type="submit"], input[type="reset"] {
-    background-color: #0b4f6c;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #08384d;
-}
-
-/* Footer */
+/* ID selector */
 #footer {
     background-color: #0b4f6c;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     margin-top: 30px;
 }
+
+/* End of style.css */
