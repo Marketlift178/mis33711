@@ -12,11 +12,15 @@ Description: Patient registration form for MIS 3371 Homework 1.
     <title>Patient Registration Form</title>
     <link href="style.css" rel="stylesheet">
 </head>
-
+<script>
+    const today = new Date();
+    document.getElementById("todayDate").innerHTML = today.toDateString();
+</script>
 <body>
     <div id="banner">
         <h1>CougarCare Medical</h1>
         <p>Patient Registration Form</p>
+        <p>Today is: <span id="todayDate"></span></p>
     </div>
 
     <div class="form-section">
